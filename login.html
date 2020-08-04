@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>float Layout</title>
+
+	<link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+
+<div id="wrap">
+
+	<div id="main">
+
+		<div id="userInfo">
+		    <form action="https://www.daum.net" id="frm">
+			<input type="text" placeholder="아이디" id="userID">
+			<span id="chkNeed1" class="chk"></span>
+			<input type="password" placeholder="비밀번호" id="userPW">
+			<span id="chkNeed2" class="chk"></span>
+		</div> <!-- div#userInfo -->
+		<div id="login">
+			<button type="button" onclick="fnLogin()">로그인</button>
+		</div> <!-- div#login -->
+	    </form>
+	</div> <!-- div#main -->
+
+	<div id="find">
+		<p>회원가입 &nbsp;&nbsp;│&nbsp;&nbsp;아이디찾기&nbsp;&nbsp;│&nbsp;&nbsp;비밀번호 찾기</p>
+	</div> <!-- div#find -->
+
+</div> <!-- div#wrap -->
+
+    <script>
+
+
+        function fnLogin() {
+            var userID = document.getElementById("userID");
+            var uID = userID.value;
+            var userPW = document.getElementById("userPW");
+            var uPW = userPW.value;
+            var frm = document.getElementById("frm");
+
+            var msg1 = "아이디를 입력하세요";
+            var msg2 = "비밀번호를 입력하세요";
+
+            if (uID == "") {
+                document.getElementById("chkNeed1").innerHTML = msg1;
+                document.getElementById("chkNeed2").innerHTML = "";
+                uID.focus();
+            } else if (uPW == "") {
+                document.getElementById("chkNeed1").innerHTML = "";
+                document.getElementById("chkNeed2").innerHTML = msg2;
+                uPW.focus();
+            } else {
+                frm.submit();
+            }
+        }
+    </script>
+</body>
+</html>

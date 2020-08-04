@@ -1,0 +1,61 @@
+@charset="UTF-8";
+
+div#wrap{
+	width: 390px;
+	border: 2px solid #ccc;
+	color: #888;
+}
+
+div#main{
+	margin-left: 10px;
+}
+
+div#userInfo{
+	float: left;
+
+	width: 230px;
+    margin: 5px 0px 15px 5px;
+    position: relative;
+}
+div#login{
+	float: left;
+	margin: 15px;
+}
+
+div#userInfo input{
+	width: 215px;
+	height: 44px;
+	padding-left: 10px;
+	font-size: 20px;
+	background-color: #eee;
+	border: none;
+	vertical-align: middle;
+	margin: 10px ;
+	color: #888;
+
+}
+
+div#login button{
+	width: 115px;
+	height: 112px;
+	font-size: 20px;
+	background-color: #ffb340;
+	color: #fff;
+	border: none;
+
+}
+span.chk{
+    color: #f00;
+    font-size: 12px;
+    position: absolute;
+    left: 14px;
+    top: 58px;
+}
+span#chkNeed2{
+    top: 124px;
+}
+div#find{
+	clear: both;
+	border-top: 2px solid #ccc;
+	text-align: center;
+}
